@@ -23,7 +23,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  background-image: url("/static/img/welcome_bg.jpg");
+  background-image: url("./static/img/welcome_bg.jpg");
   height: 100vh;
 
   font-size: 24px;
@@ -191,38 +191,38 @@ body {
 
 @keyframes slider1 {
   0% {
-    background: url(/static/img/sl_1_1.jpg);
+    background: url(./static/img/sl_1_1.jpg);
     background-size: cover;
   }
   33% {
-    background: url(/static/img/sl_1_2.jpg);
+    background: url(./static/img/sl_1_2.jpg);
     background-size: cover;
   }
   66% {
-    background: url(/static/img/sl_1_3.jpg);
+    background: url(./static/img/sl_1_3.jpg);
     background-size: cover;
   }
   100% {
-    background: url(/static/img/sl_1_1.jpg);
+    background: url(./static/img/sl_1_1.jpg);
     background-size: cover;
   }
 }
 
 @keyframes slider2 {
   0% {
-    background: url(/static/img/sl_2_1.jpg);
+    background: url(./static/img/sl_2_1.jpg);
     background-size: cover;
   }
   33% {
-    background: url(/static/img/sl_2_2.jpeg);
+    background: url(./static/img/sl_2_2.jpeg);
     background-size: cover;
   }
   66% {
-    background: url(/static/img/sl_2_3.jpg);
+    background: url(./static/img/sl_2_3.jpg);
     background-size: cover;
   }
   100% {
-    background: url(/static/img/sl_2_1.jpg);
+    background: url(./static/img/sl_2_1.jpg);
     background-size: cover;
   }
 }
