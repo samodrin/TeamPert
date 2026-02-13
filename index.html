@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="./static/img/Logo.png" type="image/png">
-  <title>Pertunen Design</title>
+  <title>TeamPert</title>
 </head>
 
 <body>
@@ -14,10 +14,10 @@
     <div class="header-title">
       <nav class="navigation">
         <ul>
-          <li><a href="#">Как это работает?</a></li>
-          <li><a href="#">Команда</a></li>
-          <li><a href="#">Наши услуги</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#process-steps">Как это работает?</a></li>
+          <li><a href="#team">Команда</a></li>
+          <li><a href="#service">Наши услуги</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <img class="logo" src="./static/img/Logo.png">
@@ -25,26 +25,27 @@
     <p class="header-headline">3D-печать</p>
     <p class="header-headline">Доверьтесь профессионалам</p>
 
-    <p class="header-slogan">Воплощай <br> Фантазируй <br> Создавай</p>
+    <p class="header-slogan">Воплощай<br>Фантазируй<br>Создавай</p>
 
     <div class="header-options">
       <p>реализация любых замыслов и проектов</p>
-      <p>
       <ol>
         <li>Декор</li>
         <li>Детали</li>
         <li>Скульптуры</li>
         <li>Светотехника</li>
-
-        </ul>
-        </p>
+      </ol>
     </div>
   </header>
 
   <main class="main">
-    <section class="slider slider-1"></section>
+    <section class="panorama">
+      <img src="./static/img/sl_1_1.jpg">
+      <img src="./static/img/sl_1_2.jpg">
+      <img src="./static/img/sl_1_3.jpg">
+    </section>
 
-    <section class="process-steps">
+    <section class="process-steps" id="process-steps">
       <div class="process-content">
         <p class="main-title">Как это работает?</p>
         <p>3D печать — это магия, которая требует времени. Чтобы довести идею до готового изделия, процесс делится на
@@ -74,7 +75,19 @@
       </div>
     </section>
 
-    <section class="slider slider-2"></section>
+    <div class="slider">
+      <img class='slider-img' src="./static/img/sl_2_1.jpg" />
+      <img class='slider-img' src="./static/img/sl_2_2.jpeg" />
+      <img class='slider-img' src="./static/img/sl_2_3.jpg" />
+      <div>
+        <img class="prev controlls" src="./static/img/left.png" alt="">
+      </div>
+      <div>
+        <img class="next controlls" src="./static/img/right.png" alt="">
+      </div>
+    </div>
+    <script src="script.js"></script>
+
 
     <section class="quote">
       <div class="quote-content">
@@ -90,27 +103,31 @@
       </div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
+      <div class="team-content">
       <p class="main-title">Команда</p>
-      <p>Когда каждый любит свое дело, профессионализм неизбежен. От скульптора до инженера — у всех общая страсть — 3D
+      <p>Когда каждый любит свое дело, профессионализм неизбежен. От скульптора до инженера, у всех общая страсть — 3D
         печать.</p>
       <img src="./static/img/cat.jpg">
+    </div>
     </section>
 
-    <section class="slider slider-3"></section>
-    <script>
-      document.querySelectorAll('.faq').forEach(faq => {
-        const content = faq.querySelector('.faq-content');
-        faq.addEventListener('toggle', () => {
-          if (faq.open) {
-            content.style.maxHeight = content.scrollHeight + 'px';
-          } else {
-            content.style.maxHeight = 0;
-          }
-        });
-      });
-    </script>
-    <section class="FAQ">
+    <div class="slider">
+      <img class='slider-img' src="./static/img/sl_3_1.jpg" />
+      <img class='slider-img' src="./static/img/sl_3_2.jpg" />
+      <img class='slider-img' src="./static/img/sl_3_3.jpg" />
+      <img class='slider-img' src="./static/img/sl_3_4.jpg" />
+      <img class='slider-img' src="./static/img/sl_3_5.jpg" />
+      <img class='slider-img' src="./static/img/sl_3_6.jpg" />
+      <div>
+        <img class="prev controlls" src="./static/img/left.png" alt="">
+      </div>
+      <div>
+        <img class="next controlls" src="./static/img/right.png" alt="">
+      </div>
+    </div>
+
+    <section class="FAQ" id="service">
       <p class="main-title">Вопросы-ответы</p>
       <div class="accordion-wrapper">
         <details name="faq" class="faq">
@@ -163,7 +180,7 @@
     </section>
 
     <section class="running-container">
-      <div class="running-content">
+      <div class="running-content" id="contacts">
         <div class="running-to">
           <div class="running-text">WORK WITH US</div>
           <svg fill="#000000" height="800px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -360,5 +377,4 @@
   </footer>
 
 </body>
-
 </html>
